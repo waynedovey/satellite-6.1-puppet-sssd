@@ -1,0 +1,22 @@
+20150930 v0.6.0
+  Add support for SSS/IPA provider
+20150517 v0.5.0
+  Support RHEL/CentOS7 oddjob
+20150406 v0.4.0
+  Add more customization ability to nsswitch <salekseev>
+  Add ability to not manage nsswitch <salekseev>
+20150105 v0.3.1
+  Add acceptance tests
+  Update helper files
+20140131 v0.3.0
+  Allow configuring ldap_group_member
+20130902 v0.2.0
+  Update log level type to current version
+v0.1.0:
+  Add remote log agent (beaver)
+v0.0.2:
+  Lint fixes - defaults for config
+  Add expired account checking
+v0.0.1:
+  Initial sssd release
+
