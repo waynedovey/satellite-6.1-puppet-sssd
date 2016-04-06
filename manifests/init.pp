@@ -98,9 +98,9 @@
 #
 #
 class sssd (
-  $services           = 'nss,pam',
-  $domain             = 'LDAP',
-  $provider           = 'ldap',
+  $services           = 'nss, sudo, pam, ssh',
+  $domain             = undef,
+  $provider           = undef,
   $filter_groups      = 'root,wheel',
   $filter_users       = 'root',
   $homedir            = undef,
@@ -113,8 +113,8 @@ class sssd (
   $ldap_tls_reqcert   = 'demand',
   $ldap_tls_cacert    = undef,
   $ldap_enumerate     = true,
-  $ipa_hostname       = undef,
-  $ipa_server         = '_srv_',
+  $ipa_hostname       = $::fqdn,
+  $ipa_server         = undef,
   $ipa_dyndns         = true,
   $ipa_server_mode    = false,
   $manage_nsswitch    = true,
